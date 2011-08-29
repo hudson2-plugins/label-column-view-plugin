@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+  http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.jvnet.hudson.plugins</groupId>
+		<artifactId>plugin</artifactId>
+		<version>1.358</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	
+	<artifactId>labelColumn</artifactId>
+	<version>1.0</version>
+	<packaging>hpi</packaging>
+	<name>Label Column Plugin</name>
+	<url>http://wiki.hudson-ci.org/display/HUDSON/Label+Column+Plugin</url>
+	<description>Displays the label of the last build in a column.</description>
+	<developers>
+		<developer>
+			<id>nmahle</id>
+			<name>Niko Mahle</name>
+			<email>niko.mahle@googlemail.com</email>
+		</developer>
+	</developers>
+	<dependencies>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+			<version>2.2.1</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+
+</project>
