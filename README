@@ -1,0 +1,18 @@
+The label-column-view-plugin is a hudson plugin to create a view and add a new column to the view.
+This column shows for each job for the latest build the current label.
+This plugin dows not search the real label. It only shows a number in combination with strings like you configure it in the view
+configure section.
+(Because most of the times, people label their builds as external job oder external ant task or something else)
+
+default behaviour
+i.e. if jobName is DAILY and lastBuild is number 13 then lastLabel = DAILY-13 
+
+special behaviour
+i.e. if prefix is "01.02.39-" and lastBuild is number 13 then lastLabel = 01.02.39-13
+
+When you configure the view, you have to add the label column to the view.
+In the textfield you have to list (; separated) the Jobs, for which a label exist.
+If you want to use the special behaviour you have to list the jobs in the textfield as follows:
+NIGHTLY<01.02.44-> to have the label result 01.02.44-13
+
+
