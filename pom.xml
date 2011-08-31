@@ -22,9 +22,9 @@
 		</developer>
 	</developers>
 	<scm>
-		<connection>git@github.com:hudson-plugins/label-column-view-plugin.git</connection>
+		<connection>scm:git:ssh://github.com:hudson-plugins/label-column-view-plugin.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/hudson-plugins/label-column-view-plugin.git</developerConnection>
-		<url>https://github.com/hudson-plugins/label-column-view-plugin</url>
+		<url>http://github.com/hudson-plugins/label-column-view-plugin</url>
 	</scm>
 	<dependencies>
 		<dependency>
