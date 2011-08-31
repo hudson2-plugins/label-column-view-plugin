@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+  http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.jvnet.hudson.plugins</groupId>
+		<artifactId>hudson-plugin-parent</artifactId>
+		<!-- The version of hudson platform -->
+		<version>1.398</version>
+	</parent>
+
+	<artifactId>labelColumnView</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>hpi</packaging>
+	<name>Label Column Plugin</name>
+	<url>http://wiki.hudson-ci.org/display/HUDSON/Label+Column+View+Plugin</url>
+	<description>Displays the label of the last build in a column.</description>
+	<developers>
+		<developer>
+			<id>nmahle</id>
+			<name>Niko Mahle</name>
+			<email>niko.mahle@googlemail.com</email>
+		</developer>
+	</developers>
+	<scm>
+		<connection>git@github.com:hudson-plugins/label-column-view-plugin.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/hudson-plugins/label-column-view-plugin.git</developerConnection>
+		<url>https://github.com/hudson-plugins/label-column-view-plugin</url>
+	</scm>
+	<dependencies>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>javax.servlet.jsp-api</artifactId>
+			<version>2.2.1</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
