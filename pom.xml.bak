@@ -9,7 +9,7 @@
 	</parent>
 
 	<artifactId>labelColumnView</artifactId>
-	<version>1.0</version>
+	<version>1.0-SNAPSHOT</version>
 	<packaging>hpi</packaging>
 	<name>Label Column Plugin</name>
 	<url>http://wiki.hudson-ci.org/display/HUDSON/Label+Column+View+Plugin</url>
@@ -50,6 +50,14 @@
 					</execution>
 				</executions>
 			</plugin>
+			      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.2.1</version>
+        <configuration>
+          <tagBase>https://svn.apache.org/repos/asf/maven/components/releases</tagBase>
+        </configuration>
+      </plugin>
 		</plugins>
 	</build>
 </project>
