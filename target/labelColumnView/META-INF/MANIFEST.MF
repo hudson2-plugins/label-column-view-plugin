@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Built-By: Niko Mahle
+Created-By: Apache Maven
+Build-Jdk: 1.6.0_26
+Extension-Name: labelColumnView
+Specification-Title: Displays the label of the last build in a column.
+Specification-Vendor: Hudson
+Implementation-Vendor: Hudson
+Implementation-Title: labelColumnView
+Implementation-Version: 1.0-SNAPSHOT
+Group-Id: org.jvnet.hudson.plugins
+Short-Name: labelColumnView
+Long-Name: Label Column Plugin
+Url: http://wiki.hudson-ci.org/display/HUDSON/Label+Column+View+Plugin
+Plugin-Version: 1.0-SNAPSHOT (private-09/01/2011 09:09-Niko Mahle)
+Hudson-Version: null
+Plugin-Developers: Niko Mahle:nmahle:niko.mahle@googlemail.com
+

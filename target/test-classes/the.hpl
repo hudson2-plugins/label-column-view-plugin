@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Group-Id: org.jvnet.hudson.plugins
+Short-Name: labelColumnView
+Long-Name: Label Column Plugin
+Url: http://wiki.hudson-ci.org/display/HUDSON/Label+Column+View+Plugin
+Plugin-Version: 1.0-SNAPSHOT (private-09/01/2011 09:09-Niko Mahle)
+Hudson-Version: 1.398
+Plugin-Developers: Niko Mahle:nmahle:niko.mahle@googlemail.com
+Libraries: e:\development\hudson\label-column-view-plugin\target\class
+ es,C:\Users\Niko Mahle\.m2\repository\javax\servlet\jsp\javax.servlet
+ .jsp-api\2.2.1\javax.servlet.jsp-api-2.2.1.jar,C:\Users\Niko Mahle\.m
+ 2\repository\org\jvnet\hudson\main\hudson-war\1.398\hudson-war-1.398.
+ war,C:\Users\Niko Mahle\.m2\repository\junit\junit\4.3.1\junit-4.3.1.
+ jar
+Resource-Path: e:\development\hudson\label-column-view-plugin\src\main
+ \webapp
+
