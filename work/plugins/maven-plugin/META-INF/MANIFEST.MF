@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: hudson
+Build-Jdk: 1.6.0_21
+Extension-Name: maven-plugin
+Specification-Title: This plug-in provides deep integration of Hudson 
+ and Maven. This functionality used to be part of the Hudson core.    
+ Now it is a plug-in that is installed by default, but can be disabled.
+Specification-Vendor: Hudson
+Implementation-Vendor: Hudson
+Implementation-Title: maven-plugin
+Implementation-Version: 1.398
+Plugin-Class: hudson.maven.PluginImpl
+Group-Id: org.jvnet.hudson.main
+Short-Name: maven-plugin
+Long-Name: Hudson Maven :: Plugin
+Url: http://wiki.hudson-ci.org/display/HUDSON/Maven+2+Project+Plugin
+Plugin-Version: 1.398
+Hudson-Version: 1.398
+Plugin-Developers: 
+

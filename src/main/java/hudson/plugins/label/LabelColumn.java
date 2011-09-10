@@ -8,7 +8,7 @@ import hudson.views.ListViewColumnDescriptor;
 import org.kohsuke.stapler.DataBoundConstructor;
 
 /**
- * This {@link LabelColumn} adds a (optional) new column to user defined
+ * This {@link ListViewColumn} adds a (optional) new column to user defined
  * views that shows the label of the last build of a job.
  * 
  * @author nmahle
@@ -24,6 +24,7 @@ public class LabelColumn extends ListViewColumn {
 	}
 	
 	 public LabelColumn() {
+		 
 		    this(null);
     }
 
@@ -114,8 +115,13 @@ public class LabelColumn extends ListViewColumn {
 		// DisplayName in configure view column
 		@Override
 		public String getDisplayName() {
+			
 			return "Label";
 		}
-
+		  // don't show the Label column in the ALL View by default
+		  @Override
+		  public boolean shownByDefault() {
+		        return false;
+		    }
 	}
 }
