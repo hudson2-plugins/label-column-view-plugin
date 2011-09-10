@@ -7,12 +7,12 @@ Specification-Title: Displays the label of the last build in a column.
 Specification-Vendor: Hudson
 Implementation-Vendor: Hudson
 Implementation-Title: labelColumnView
-Implementation-Version: 1.0-SNAPSHOT
+Implementation-Version: 1.2-SNAPSHOT
 Group-Id: org.jvnet.hudson.plugins
 Short-Name: labelColumnView
 Long-Name: Label Column Plugin
 Url: http://wiki.hudson-ci.org/display/HUDSON/Label+Column+View+Plugin
-Plugin-Version: 1.0-SNAPSHOT (private-09/02/2011 16:53-Niko Mahle)
+Plugin-Version: 1.2-SNAPSHOT (private-09/10/2011 11:18-Niko Mahle)
 Hudson-Version: null
 Plugin-Developers: Niko Mahle:nmahle:niko.mahle@googlemail.com
 
