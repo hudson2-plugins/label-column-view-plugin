@@ -9,7 +9,7 @@
 	</parent>
 
 	<artifactId>labelColumnView</artifactId>
-	<version>1.5-SNAPSHOT</version>
+	<version>1.5</version>
 	<packaging>hpi</packaging>
 	<name>Label Column Plugin</name>
 	<url>http://wiki.hudson-ci.org/display/HUDSON/Label+Column+View+Plugin</url>
