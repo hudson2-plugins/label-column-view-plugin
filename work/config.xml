@@ -20,7 +20,7 @@
     </hudson.model.AllView>
     <listView>
       <owner class="hudson" reference="../../.."/>
-      <name>sdfdsf</name>
+      <name>test2</name>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <jobNames class="tree-set">
@@ -37,7 +37,7 @@
         <hudson.views.LastDurationColumn/>
         <hudson.views.BuildButtonColumn/>
         <hudson.plugins.label.LabelColumn>
-          <jobName4Label>test</jobName4Label>
+          <jobName4Label>test;blah;nightly;DAILY401.02.39-5</jobName4Label>
         </hudson.plugins.label.LabelColumn>
       </columns>
     </listView>

@@ -11,11 +11,7 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector"/>
   <concurrentBuild>false</concurrentBuild>
-  <builders>
-    <hudson.tasks.BatchFile>
-      <command>echo blah</command>
-    </hudson.tasks.BatchFile>
-  </builders>
+  <builders/>
   <publishers/>
   <buildWrappers/>
 </project>
