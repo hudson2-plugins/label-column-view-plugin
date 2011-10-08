@@ -103,7 +103,7 @@ public class LabelColumn extends ListViewColumn {
 	 * @return String lastLabel 
 	 * */
 	public String specialLabel(Job job, String prefix) {
-		String build = "" + job.getBuilds().get(1);
+		String build = "" + job.getBuilds().getLastBuild();
 		String labelnumber = build.split("#")[1];
 		String lastLabel = prefix + labelnumber;
 		return lastLabel;
