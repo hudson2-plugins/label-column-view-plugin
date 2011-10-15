@@ -89,7 +89,7 @@ public class LabelColumn extends ListViewColumn {
 	 * @return String lastLabel 
 	 * */
 	public String defaultLabel(Job job) {
-		String build = "" + job.getBuilds().getLastBuild();
+		String build = "" + job.getLastSuccessfulBuild();
 		String labelnumber = build.split("#")[1];
 		String lastLabel = job.getName() + "-" + labelnumber;
 		return lastLabel;
@@ -103,7 +103,8 @@ public class LabelColumn extends ListViewColumn {
 	 * @return String lastLabel 
 	 * */
 	public String specialLabel(Job job, String prefix) {
-		String build = "" + job.getBuilds().getLastBuild();
+		String build = "" + job.getLastSuccessfulBuild();
+		System.out.println("job.getLastSuccessfulBuild(): "+build);
 		String labelnumber = build.split("#")[1];
 		String lastLabel = prefix + labelnumber;
 		return lastLabel;

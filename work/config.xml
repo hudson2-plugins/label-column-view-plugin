@@ -25,6 +25,9 @@
       <filterQueue>false</filterQueue>
       <jobNames class="tree-set">
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>DAILY</string>
+        <string>datamodel</string>
+        <string>NIGHTLY</string>
         <string>test</string>
       </jobNames>
       <jobFilters/>
@@ -37,7 +40,7 @@
         <hudson.views.LastDurationColumn/>
         <hudson.views.BuildButtonColumn/>
         <hudson.plugins.label.LabelColumn>
-          <jobName4Label>test;blah;nightly;DAILY401.02.39-5</jobName4Label>
+          <jobName4Label>test;blah;DAILY;NIGHTLY&lt;01.02.41.0-&gt;;dflsdk</jobName4Label>
         </hudson.plugins.label.LabelColumn>
       </columns>
     </listView>
