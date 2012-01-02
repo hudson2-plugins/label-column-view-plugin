@@ -1,8 +1,0 @@
-Gestartet durch Benutzer anonymous
-[workspace] $ cmd /c call C:\Users\NIKOMA~1\AppData\Local\Temp\hudson8706804644803321074.bat
-
-E:\development\hudson\label-column-view-plugin\work\jobs\test\workspace>echo blah 
-blah
-
-E:\development\hudson\label-column-view-plugin\work\jobs\test\workspace>exit 0 
-Finished: SUCCESS

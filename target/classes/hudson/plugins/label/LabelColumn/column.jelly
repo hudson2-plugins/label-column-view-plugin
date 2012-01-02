@@ -1,3 +1,0 @@
-<j:jelly xmlns:j="jelly:core">
-  <td>${it.getLabel(job)}</td>
-</j:jelly>

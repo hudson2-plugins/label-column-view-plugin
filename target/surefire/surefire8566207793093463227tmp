@@ -1,8 +1,0 @@
-#surefire
-#Thu Sep 01 09:04:58 CEST 2011
-java.io.tmpdir=e\:\\development\\hudson\\label-column-view-plugin\\target
-user.dir=e\:\\development\\hudson\\label-column-view-plugin
-hudson.udp=33849
-localRepository=C\:\\Users\\Niko Mahle\\.m2\\repository
-arguments=-Dgpg.passphrase\=taucher
-basedir=e\:\\development\\hudson\\label-column-view-plugin
