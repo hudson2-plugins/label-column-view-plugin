@@ -3,17 +3,23 @@
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties/>
+  <creationTime>0</creationTime>
+  <properties>
+    <watched-dependencies-property/>
+  </properties>
   <scm class="hudson.scm.NullSCM"/>
+  <advancedAffinityChooser>false</advancedAffinityChooser>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector"/>
   <concurrentBuild>false</concurrentBuild>
+  <cleanWorkspaceRequired>false</cleanWorkspaceRequired>
   <builders>
     <hudson.tasks.BatchFile>
-      <command>echo blah</command>
+      <command>echo blah
+sdf</command>
     </hudson.tasks.BatchFile>
   </builders>
   <publishers/>

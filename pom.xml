@@ -5,7 +5,7 @@
 		<groupId>org.jvnet.hudson.plugins</groupId>
 		<artifactId>hudson-plugin-parent</artifactId>
 		<!-- The version of hudson platform -->
-		<version>1.398</version>
+		<version>2.1.0</version>
 	</parent>
 
 	<artifactId>labelColumnView</artifactId>

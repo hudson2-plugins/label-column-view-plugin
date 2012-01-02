@@ -2,6 +2,7 @@ package hudson.plugins.label;
 
 import hudson.Extension;
 import hudson.model.Job;
+import hudson.model.Result;
 import hudson.views.ListViewColumn;
 import hudson.views.ListViewColumnDescriptor;
 
@@ -78,7 +79,7 @@ public class LabelColumn extends ListViewColumn {
 	 * @return String Array jobNames4Label contains JobNames
 	 * */
 	public String[] splitJobs(String jobName4Label) {
-		System.out.println(jobName4Label);
+		//System.out.println(jobName4Label);
 		String[] jobNames4Label = jobName4Label.split(";");
 		return jobNames4Label;
 	}
@@ -89,7 +90,7 @@ public class LabelColumn extends ListViewColumn {
 	 * @return String lastLabel 
 	 * */
 	public String defaultLabel(Job job) {
-		String build = "" + job.getLastSuccessfulBuild();
+		String build = "" + getLastCompletedandSuccessfullBuild(job);
 		String labelnumber = build.split("#")[1];
 		String lastLabel = job.getName() + "-" + labelnumber;
 		return lastLabel;
@@ -103,13 +104,29 @@ public class LabelColumn extends ListViewColumn {
 	 * @return String lastLabel 
 	 * */
 	public String specialLabel(Job job, String prefix) {
-		String build = "" + job.getLastSuccessfulBuild();
-		System.out.println("job.getLastSuccessfulBuild(): "+build);
+		String build = getLastCompletedandSuccessfullBuild(job);
 		String labelnumber = build.split("#")[1];
 		String lastLabel = prefix + labelnumber;
 		return lastLabel;
 	}
 
+	/*
+	 * due to some strange, weird code behavior in job.getLastSuccessfulBuild in line 727
+	 * we have to use an own method
+	 */
+	public String getLastCompletedandSuccessfullBuild(Job job){
+		String lastCompletedandSuccessfullBuild=null;
+		if (job.getLastCompletedBuild().getResult().equals(Result.SUCCESS)){
+			lastCompletedandSuccessfullBuild = "" + job.getLastCompletedBuild();
+			//System.out.println("job.getLastCompletedBuild(): "+job.getLastCompletedBuild());
+			}
+		else {
+			lastCompletedandSuccessfullBuild = "" + job.getLastCompletedBuild().getPreviousSuccessfulBuild();
+			//System.out.println("job.getLastCompletedBuild().getPreviousSuccessfulBuild(): "+job.getLastCompletedBuild().getPreviousSuccessfulBuild());
+		}
+		return lastCompletedandSuccessfullBuild;
+	}
+	
 	@Extension
 	public static class LabelColumnDescriptor extends ListViewColumnDescriptor {
 

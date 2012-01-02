@@ -5,6 +5,7 @@
   <mode>NORMAL</mode>
   <authorizationStrategy class="hudson.security.AuthorizationStrategy$Unsecured"/>
   <securityRealm class="hudson.security.SecurityRealm$None"/>
+  <configuredWorkspaceRoot></configuredWorkspaceRoot>
   <jdks/>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
@@ -40,7 +41,7 @@
         <hudson.views.LastDurationColumn/>
         <hudson.views.BuildButtonColumn/>
         <hudson.plugins.label.LabelColumn>
-          <jobName4Label>test;blah;DAILY;NIGHTLY&lt;01.02.41.0-&gt;;dflsdk</jobName4Label>
+          <jobName4Label>DAILY;NIGHTLY&lt;01.02.41.0-&gt;;test&lt;LaBeL_&gt;</jobName4Label>
         </hudson.plugins.label.LabelColumn>
       </columns>
     </listView>
