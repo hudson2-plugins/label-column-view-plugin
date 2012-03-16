@@ -3,7 +3,7 @@ Group-Id: org.jvnet.hudson.plugins
 Short-Name: labelColumnView
 Long-Name: Label Column Plugin
 Url: http://wiki.hudson-ci.org/display/HUDSON/Label+Column+View+Plugin
-Plugin-Version: 1.8-SNAPSHOT (private-01/02/2012 12:19-Niko Mahle)
+Plugin-Version: 1.9-SNAPSHOT (private-02/12/2012 15:35-Niko Mahle)
 Hudson-Version: 2.1.0
 Plugin-Developers: Niko Mahle:nmahle:niko.mahle@googlemail.com
 Libraries: E:\development\hudson\label-column-view-plugin\target\class
